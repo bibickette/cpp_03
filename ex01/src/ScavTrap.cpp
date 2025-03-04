@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 16:02:33 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 18:18:36 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/04 18:54:55 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 using std::cout;
 using std::endl;
 
-ScavTrap::ScavTrap() : ClapTrap("No name")
+ScavTrap::ScavTrap() : ClapTrap("No_Name")
 {	
 	_name = "No Name";
 	_hitPts = 100; 
@@ -78,3 +78,4 @@ void ScavTrap::attack(const std::string& target)
 		<< " points of damage\033[0m !" << endl;
 	_energyPts -= 1;
 }
+

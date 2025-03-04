@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:09:45 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 17:08:05 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/04 17:15:24 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,6 @@ unsigned int ClapTrap::getAttackDmg()
 	return _attackDmg;
 }
 
-
 std::string ClapTrap::getName()
 {
 	return _name;
@@ -76,8 +75,8 @@ void ClapTrap::takeDamage(unsigned int amount)
 	<< " takes \033[34m" << amount 
 	<< " points of damage\033[0m !" << endl;
 	_hitPts -= amount;
-	if(_hitPts == 0)
-	{ cout << "\033[35mClapTrap\033[0m " << _name << " \033[31mis now dead\033[0m :/" << endl; return ; }
+	if(_hitPts == 0 || (int)(_hitPts - amount) < 0)
+	{ _hitPts = 0; cout << "\033[35mClapTrap\033[0m " << _name << " \033[31mis now dead\033[0m :/" << endl; return ; }
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
@@ -88,8 +87,15 @@ void ClapTrap::beRepaired(unsigned int amount)
 	{	cout << "\033[35mClapTrap\033[0m " << _name << " can't do anything, no \033[33menergy\033[0m !" << endl; return ; }
 	cout << "\033[35mClapTrap\033[0m " << _name
 	<< " repairs itself \033[32m" << amount 
-	<< " hit points\033[0m, but losing " << "\033[33m1 point of energy\033[0m !" << endl;
+	<< " hit points\033[0m, but losing " << "\033[33m1 point of energy !\033[0m" << endl;
 	_hitPts += amount;
 	_energyPts -= 1;
 }
 
+void ClapTrap::displayStatus()
+{
+	cout << _name 
+	<< "\033[33m Energy : " << _energyPts
+	<< "\033[0m, \033[32mHit Points : " << _hitPts
+	<< "\033[0m, \033[34mattack dmg : " << _attackDmg << "\033[0m" << endl;
+}

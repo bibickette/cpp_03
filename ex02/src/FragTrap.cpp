@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 17:21:02 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 17:50:38 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/04 18:54:55 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 using std::cout;
 using std::endl;
 
-FragTrap::FragTrap() : ClapTrap("No name")
+FragTrap::FragTrap() : ClapTrap("No_Name")
 {
 	_hitPts = 100;
 	_energyPts = 100;
