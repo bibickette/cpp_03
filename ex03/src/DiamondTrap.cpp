@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 18:42:18 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 19:40:55 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/07 15:38:15 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), Frag
 {
 	_hitPts = FragTrap::_static_hitPts;
 	_energyPts = ScavTrap::_static_energyPts;
-	_attackDmg = FragTrap::_attackDmg;
+	_attackDmg = FragTrap::_static_attackDmg;
 	cout << "\033[31mParameter DiamondTrap constructor called for \033[0m" << _name << endl;
 }
 

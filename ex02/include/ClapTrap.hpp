@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:07:24 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 19:37:05 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/07 15:34:46 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@
 class ClapTrap
 {
 protected:
-	const static unsigned int _static_hitPts = 10;
-	const static unsigned int _static_energyPts = 10;
-	const static unsigned int _static_attackDmg = 0;
+	const static unsigned int _static_hitPts;
+	const static unsigned int _static_energyPts;
+	const static unsigned int _static_attackDmg;
 	
 	std::string _name;
 	unsigned int _hitPts;

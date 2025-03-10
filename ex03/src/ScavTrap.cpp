@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 16:02:33 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 18:54:55 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/07 15:36:18 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 using std::cout;
 using std::endl;
+
+const unsigned int ScavTrap::_static_hitPts = 100;
+const unsigned int ScavTrap::_static_energyPts = 50;
+const unsigned int ScavTrap::_static_attackDmg = 20;
 
 ScavTrap::ScavTrap() : ClapTrap("No_Name")
 {	

@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:04:59 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 19:39:48 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/07 15:48:24 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ using std::endl;
 
 int main(void)
 {
-	ClapTrap a("pouet");
-	ScavTrap b("Michel");
+	ClapTrap a("clap");
+	ScavTrap b("scav");
 	FragTrap c("Froggy");
-	DiamondTrap d("Kamas");
+	DiamondTrap d("diamond");
 	
 	d.whoAmI();
 	b.displayStatus();
