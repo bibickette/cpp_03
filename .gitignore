@@ -1,0 +1,10 @@
+# Object files
+*.o
+
+ex00/claptrap
+ex01/fragtrap
+ex02/scavtrap
+ex03/diamondtrap
+
+fr.subject.pdf
+en.subject.pdf
