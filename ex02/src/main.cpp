@@ -6,11 +6,10 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:04:59 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 18:19:05 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 13:30:14 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
 
@@ -27,6 +26,7 @@ int main(void)
 	b.displayStatus();
 	c.displayStatus();
 	a.beRepaired(1);
+	a.displayStatus();
 	cout << endl;
 	
 	b.attack(a.getName());

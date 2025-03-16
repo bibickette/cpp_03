@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:04:59 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/04 13:02:19 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 13:11:34 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ using std::endl;
 
 int main(void)
 {
-	ClapTrap a("pouet");
-	ClapTrap b("Michel");
+	ClapTrap a("Pouet");
+	ClapTrap b("Michmich");
 
 	a.attack(b.getName());
 	b.takeDamage(a.getAttackDmg());

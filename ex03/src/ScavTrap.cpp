@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 16:02:33 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/07 15:36:18 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 13:32:03 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 
 ScavTrap::ScavTrap(const ScavTrap &toCopy) : ClapTrap(toCopy._name)
 {
+	cout << "\033[31mCopy ScavTrap constructor called for \033[0m" << toCopy._name << endl;
 	*this = toCopy;
 };
 
@@ -78,7 +79,7 @@ void ScavTrap::attack(const std::string& target)
 	{	cout << "\033[34mScavTrap\033[0m " << _name << " can't do anything, no \033[33menergy\033[0m !" << endl; return ; }
 	cout << "\033[34mScavTrap\033[0m " << _name
 		<< " attacks " << target 
-		<< ", causing \033[34m" << _attackDmg
+		<< " with special ScavTrap Attack ! causing \033[34m" << _attackDmg
 		<< " points of damage\033[0m !" << endl;
 	_energyPts -= 1;
 }

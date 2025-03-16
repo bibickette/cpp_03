@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:09:45 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/07 15:35:22 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 13:21:16 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ ClapTrap::ClapTrap(std::string name) : _name(name), _hitPts(10), _energyPts(10),
 
 ClapTrap::ClapTrap(const ClapTrap &toCopy)
 {
+	cout << "\033[31mCopy ClapTrap constructor called for \033[0m" << toCopy._name << endl;
 	*this = toCopy;
 }
 

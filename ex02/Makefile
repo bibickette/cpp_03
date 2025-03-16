@@ -6,11 +6,11 @@
 #    By: phwang <phwang@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/02/11 13:17:33 by phwang            #+#    #+#              #
-#    Updated: 2025/03/15 12:17:55 by phwang           ###   ########.fr        #
+#    Updated: 2025/03/16 13:07:38 by phwang           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = scavtrap
+NAME = fragtrap
 
 CC = c++
 CFLAGS = -Wall -Wextra -Werror -std=c++98 -I$(INCLUDE_DIR)
