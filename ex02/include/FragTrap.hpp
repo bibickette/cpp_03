@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 17:21:36 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/07 15:35:38 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 22:17:09 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,9 @@
 
 #include "ClapTrap.hpp"
 
-class FragTrap : virtual public ClapTrap
+class FragTrap : public ClapTrap
 {
-protected:
-	const static unsigned int _static_hitPts;
-	const static unsigned int _static_energyPts;
-	const static unsigned int _static_attackDmg;
-
+	
 public:
 	FragTrap();
 	FragTrap(std::string name);

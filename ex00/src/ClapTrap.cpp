@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 12:09:45 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/16 13:21:43 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 22:08:59 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,12 @@
 using std::cout;
 using std::endl;
 
-const unsigned int ClapTrap::_static_hitPts = 10;
-const unsigned int ClapTrap::_static_energyPts = 10;
-const unsigned int ClapTrap::_static_attackDmg = 0;
-
-ClapTrap::ClapTrap() : _name("No Name"), _hitPts(_static_hitPts), _energyPts(_static_energyPts), _attackDmg(_static_attackDmg)
+ClapTrap::ClapTrap() : _name("No Name"), _hitPts(10), _energyPts(10), _attackDmg(0)
 {
 	cout << "\033[31mBasic ClapTrap constructor called\033[0m" << endl;
 };
 
-ClapTrap::ClapTrap(std::string name) : _name(name), _hitPts(_static_hitPts), _energyPts(_static_energyPts), _attackDmg(_static_attackDmg)
+ClapTrap::ClapTrap(std::string name) : _name(name), _hitPts(10), _energyPts(10), _attackDmg(0)
 {
 	cout << "\033[31mParameter ClapTrap constructor called for \033[0m" << _name << endl;
 };

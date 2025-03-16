@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 17:21:02 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/07 15:35:53 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 22:11:17 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 using std::cout;
 using std::endl;
-
-const unsigned int FragTrap::_static_hitPts = 100;
-const unsigned int FragTrap::_static_energyPts = 100;
-const unsigned int FragTrap::_static_attackDmg = 30;
 
 FragTrap::FragTrap() : ClapTrap("No_Name")
 {

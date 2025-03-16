@@ -6,11 +6,13 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 17:04:59 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/16 13:43:01 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 20:33:38 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "DiamondTrap.hpp"
+#include "FragTrap.hpp"
+#include "ScavTrap.hpp"
 
 using std::cout;
 using std::endl;

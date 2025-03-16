@@ -6,7 +6,7 @@
 /*   By: phwang <phwang@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/04 16:02:33 by phwang            #+#    #+#             */
-/*   Updated: 2025/03/16 13:32:16 by phwang           ###   ########.fr       */
+/*   Updated: 2025/03/16 22:10:37 by phwang           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,25 +15,21 @@
 using std::cout;
 using std::endl;
 
-const unsigned int ScavTrap::_static_hitPts = 100;
-const unsigned int ScavTrap::_static_energyPts = 50;
-const unsigned int ScavTrap::_static_attackDmg = 20;
-
 ScavTrap::ScavTrap() : ClapTrap("No_Name")
 {	
 	_name = "No Name";
-	_hitPts = _static_hitPts; 
-	_energyPts = _static_energyPts;
-	_attackDmg = _static_attackDmg;
+	_hitPts = 100; 
+	_energyPts = 50;
+	_attackDmg = 20;
 	cout << "\033[31mBasic ScavTrap constructor called\033[0m" << endl; 
 };
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name)
 {		
 	_name = name;
-	_hitPts = _static_hitPts; 
-	_energyPts = _static_energyPts;
-	_attackDmg = _static_attackDmg;
+	_hitPts = 100; 
+	_energyPts = 50;
+	_attackDmg = 20;
 	cout << "\033[31mParameter ScavTrap constructor called for \033[0m" << _name << endl;
 };
 
