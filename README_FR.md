@@ -15,6 +15,14 @@ Les exercices permettent de comprendre comment les classes de base et les classe
 **Technologies**
 - Makefile
 
+* * *
+## Concepts clés
+- Héritage des classes (classes de base et classes dérivées)
+- Ordre d’appel des constructeurs et destructeurs
+- Spécificateurs d’accès (`public`, `protected`, `private`)
+- Réutilisation de code
+- Héritage multi-niveaux
+- Ambiguïté et résolution de portée
 
 * * *
 ## Aperçu des exercices

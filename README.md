@@ -18,6 +18,15 @@ The exercises introduce how base and derived classes interact, how constructors 
 - Makefile
 
 * * *
+## Key Concepts
+- Class inheritance (base and derived classes)
+- Constructor and destructor order
+- Access specifiers (`public`, `protected`, `private`)
+- Code reuse
+- Multiple levels of inheritance
+- Ambiguity and scope resolution
+
+* * *
 ## Exercices Overview
 ### ex00. Aaaaand... OPEN!
 Introduction to inheritance:
